@@ -1,5 +1,8 @@
 package dev.sanket.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinaryTree {
 
     private Node root;
@@ -32,6 +35,34 @@ public class BinaryTree {
         }
 
         return node;
+    }
+
+    public List<Node> findNodes(int target) {
+
+        ArrayList<Node> nodes = new ArrayList<>();
+
+        populateNodesWithTarget(root, target, nodes);
+
+        return nodes;
+    }
+
+    private int populateNodesWithTarget(Node node, int target, ArrayList<Node> nodes) {
+
+        int subTreeSum = node.getValue();
+
+        if (node.hasLeftChild()) {
+            subTreeSum += populateNodesWithTarget(node.getLeftChild(), target, nodes);
+        }
+
+        if (node.hasRightChild()) {
+            subTreeSum += populateNodesWithTarget(node.getRightChild(), target, nodes);
+        }
+
+        if (subTreeSum == target) {
+            nodes.add(node);
+        }
+
+        return subTreeSum;
     }
 
     @Override

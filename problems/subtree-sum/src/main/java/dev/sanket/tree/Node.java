@@ -24,12 +24,20 @@ public class Node {
         return this.left;
     }
 
+    public boolean hasLeftChild() {
+        return this.left != null;
+    }
+
     public void addRightChild(Node node) {
         this.right = node;
     }
 
     public Node getRightChild() {
         return this.right;
+    }
+
+    public boolean hasRightChild() {
+        return this.right != null;
     }
 
     public int getValue() {
@@ -43,11 +51,11 @@ public class Node {
 
         output.append("[" + value);
 
-        if (left != null) {
+        if (hasLeftChild()) {
             output.append(left);
         }
 
-        if (right != null) {
+        if (hasRightChild()) {
             output.append(right);
         }
 

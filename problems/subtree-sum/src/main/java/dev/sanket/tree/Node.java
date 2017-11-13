@@ -35,4 +35,24 @@ public class Node {
     public int getValue() {
         return this.value;
     }
+
+    @Override
+    public String toString() {
+
+        StringBuilder output = new StringBuilder();
+
+        output.append("[" + value);
+
+        if (left != null) {
+            output.append(left);
+        }
+
+        if (right != null) {
+            output.append(right);
+        }
+
+        output.append("]");
+
+        return output.toString();
+    }
 }

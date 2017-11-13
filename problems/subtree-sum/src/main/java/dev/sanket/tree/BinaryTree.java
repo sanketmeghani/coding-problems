@@ -10,8 +10,32 @@ public class BinaryTree {
 
     public static BinaryTree fromArray(int[] values) {
 
-        Node root = Node.withValue(values[0]);
+        Node root = buildTree(values, 0);
 
         return new BinaryTree(root);
+    }
+
+    private static Node buildTree(int[] values, int nodeIndex) {
+
+        Node node = Node.withValue(values[nodeIndex]);
+
+        if (((nodeIndex * 2) + 2) < values.length) {
+
+            int leftChildIndex = (2 * nodeIndex) + 1;
+            int rightChildIndex = (2 * nodeIndex) + 2;
+
+            Node leftChild = buildTree(values, leftChildIndex);
+            Node rightChild = buildTree(values, rightChildIndex);
+
+            node.addLeftChild(leftChild);
+            node.addRightChild(rightChild);
+        }
+
+        return node;
+    }
+
+    @Override
+    public String toString() {
+        return root.toString();
     }
 }

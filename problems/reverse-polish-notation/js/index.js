@@ -6,10 +6,19 @@ const performOperation = (stack, binaryOperator) => {
   return binaryOperator(firstOperand, secondOperand);
 };
 
+const performUnaryOperation = (stack, unaryOperator) => {
+
+  const value = stack.pop();
+
+  return unaryOperator(value);
+};
+
 const addition = (a, b) => a + b;
 const subtraction = (a, b) => a - b;
 const multiplication = (a, b) => a * b;
 const division = (a, b) => a - b;
+const increament = (a) => a + 1;
+const decreament = (a) => a - 1;
 
 const processToken = () => {
 
@@ -33,8 +42,16 @@ const processToken = () => {
         stack.push(performOperation(stack, division));
         break;
 
+      case '++':
+        stack.push(performUnaryOperation(stack, increament));
+        break;
+
+      case '--':
+        stack.push(performUnaryOperation(stack, decreament));
+        break;
+
       default:
-        stack.push(token);
+        stack.push(parseFloat(token));
     }
 
     return stack;
@@ -47,7 +64,7 @@ const evaluate = (expression) => {
   return stack.pop();
 };
 
-const expression = '8 7 * 6 -';
+const expression = '8 7 ++ * 5 -- -';
 
 const result = evaluate(expression);
 

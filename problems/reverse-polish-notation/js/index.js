@@ -64,8 +64,10 @@ const evaluate = (expression) => {
   return stack.pop();
 };
 
-const expression = '8 7 ++ * 5 -- -';
+//const expression = '8 7 ++ * 5 -- -';
 
-const result = evaluate(expression);
+//const result = evaluate(expression);
 
-console.log(result);
+//console.log(result);
+
+export default evaluate;

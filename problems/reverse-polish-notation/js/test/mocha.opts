@@ -1,0 +1,5 @@
+--timeout 3000
+--slow 30
+--reporter spec
+--require babel-core/register
+--require babel-polyfill

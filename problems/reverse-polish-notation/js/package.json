@@ -1,0 +1,31 @@
+{
+  "name": "reverse-polish-notation",
+  "version": "1.0.0",
+  "description": "Reverse Polish Notation",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanketmeghani/coding-problems.git"
+  },
+  "keywords": [
+    "rpn"
+  ],
+  "author": "sanket.meghani@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanketmeghani/coding-problems/issues"
+  },
+  "homepage": "https://github.com/sanketmeghani/coding-problems#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {}
+}

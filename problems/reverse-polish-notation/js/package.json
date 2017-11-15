@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Reverse Polish Notation",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.4.0"
+  },
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha **/*.test.js"
   },

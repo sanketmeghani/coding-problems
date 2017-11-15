@@ -5,3 +5,8 @@
 Infix expression `(8 * 7) - 6` is written in RPN as `8 7 * 6 -`.
 
 Write a programme to evaluate an RPN.
+
+## Solutions
+
+* [JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/js)
+* [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/java)

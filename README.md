@@ -2,9 +2,26 @@
 
 Common coding problems with their solutions
 
-## Import & Running Projects
+## Solutions
+
+### Java
 
 All solutions in Java are independant maven projects. You can import the solution in your favourite IDE as maven project. Solutions are accompanied by JUnit tests to test the solution.
+
+Execute following command from the solution directory to run tests
+
+```
+mvn clean test
+```
+
+### JavaScript
+
+All solutions in JavaScript are implemented as node package. Execute following command from the solution directory to run tests
+
+```
+npm install
+npm test
+```
 
 ## Problems
 

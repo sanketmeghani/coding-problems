@@ -41,19 +41,7 @@ and there are no elements with indices greater than 7.
 
 P = 8 is not an equilibrium index, because it does not fulfill the condition 0 ≤ P < N.
 
-Write a function:
-
-```
-class Solution {
-  public int solution(int[] A) {
-    .
-    .
-    .
-  }
-}
-```
-
-that, given a zero-indexed array A consisting of N integers, returns any of its equilibrium indices. The function should return −1 if no equilibrium index exists.
+Write a function that, given a zero-indexed array A consisting of N integers, returns any of its equilibrium indices. The function should return −1 if no equilibrium index exists.
 
 For example, given array A shown above, the function may return 1, 3 or 7, as explained above.
 

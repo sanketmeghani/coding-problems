@@ -1,6 +1,6 @@
 package dev.sanket.equilibriumindex;
 
-public class EqulibriumIndex {
+public class EquilibriumIndex {
 
     public int solution(int[] numbers) {
 

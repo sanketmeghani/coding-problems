@@ -1,14 +1,12 @@
 package dev.sanket.equilibriumindex;
 
+import java.util.Arrays;
+
 public class EquilibriumIndex {
 
     public int solution(int[] numbers) {
 
-        int sum = 0;
-
-        for (int index = 0; index < numbers.length; index++) {
-            sum += numbers[index];
-        }
+        int sum = Arrays.stream(numbers).reduce(0, Integer::sum);
 
         int sumOfRightElements = 0;
 

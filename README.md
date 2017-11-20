@@ -25,7 +25,7 @@ npm test
 
 ## Problems
 
-* [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equlilibrium-index): Find equilibrium index of an array
+* [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equililibrium-index): Find equilibrium index of an array
 * [Reverse Polish Notation](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation): Write a programme to evaluate reverse polish notation [[JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/js), [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/java)]
 * [Reverse Words](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-words): Write a programme to reverse words of given string
 * [Rotated Array](https://github.com/sanketmeghani/coding-problems/tree/master/problems/rotated-array)

@@ -12,5 +12,4 @@ Example input & output:
 
 Given an input array `[9, 15, 23, 50, 100, 1, 4, 7]`, your programme should output:
 
-No of times: 3
-Direction: Clockwise
+Your function should return 4.

@@ -4,11 +4,13 @@ import java.util.function.BiFunction;
 
 public class RotatedArray {
 
-    public static void findPivot(int[] input) {
+    public static int findPivot(int[] input) {
 
         boolean ascending = false;
 
-        if ((input[0] < input[1]) && (input[0] > input[input.length - 1])) {
+        if ((input[0] < input[1]) && (input[0] < input[input.length - 1])) {
+            return -1;
+        } else if ((input[0] < input[1]) && (input[0] > input[input.length - 1])) {
             ascending = true;
         }
 
@@ -23,8 +25,10 @@ public class RotatedArray {
         for (int i = 0; i < input.length - 1; i++) {
 
             if (!inExpectedOrder.apply(input[i], input[i + 1])) {
-                System.out.println("Index: " + i);
+                return i;
             }
         }
+
+        return input.length;
     }
 }

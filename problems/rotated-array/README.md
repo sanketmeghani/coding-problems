@@ -4,9 +4,9 @@ Given a sorted array which was rotated a few times. Write a programme to identif
 
 Explanation for array rotation:
 
-Given sorted array: `[1, 4, 7, 9, 15, 23, 50, 100]`
-Original array after 1 rotation: `[4, 7, 9, 15, 23, 50, 100, 1]`
-Original array after 2 rotations: `[7, 9, 15, 23, 50, 100, 1, 4]`
+* Given sorted array: `[1, 4, 7, 9, 15, 23, 50, 100]`
+* Original array after 1 rotation: `[4, 7, 9, 15, 23, 50, 100, 1]`
+* Original array after 2 rotations: `[7, 9, 15, 23, 50, 100, 1, 4]`
 
 Example input & output:
 

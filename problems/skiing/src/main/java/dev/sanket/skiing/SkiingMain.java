@@ -20,6 +20,8 @@ public class SkiingMain {
                     mountainMap.setMountainHeight(row, column, mountainHeight);
                 }
             }
+            
+            System.out.println(mountainMap);
         }
     }
 }

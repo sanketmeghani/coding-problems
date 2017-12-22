@@ -1,0 +1,14 @@
+{
+  "name": "second-smallest",
+  "version": "1.0.0",
+  "description": "Find second smallest number in given array",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "second-smallest"
+  ],
+  "author": "sanket.meghani@gmail.com",
+  "license": "ISC"
+}

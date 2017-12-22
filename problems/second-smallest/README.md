@@ -25,3 +25,7 @@ Example input 3:
 Example output 3:
 
 `1`
+
+## Solutions
+
+* [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest/java)

@@ -29,7 +29,7 @@ npm test
 * [Reverse Polish Notation](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation): Write a programme to evaluate reverse polish notation [[JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/js), [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/java)]
 * [Reverse Words](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-words): Write a programme to reverse words of given string
 * [Rotated Array](https://github.com/sanketmeghani/coding-problems/tree/master/problems/rotated-array): Find a pivot index for sorted & rotated array
-* [Second Smallest](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest): Find second smallest number in give array
+* [Second Smallest](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest): Find second smallest number in give array [[Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest/java)]
 * [Sum Of Sub Trees](https://github.com/sanketmeghani/coding-problems/tree/master/problems/subtree-sum): write a programme to print root node of all sub-trees whose sum is equal to given number
 
 ## Contributing

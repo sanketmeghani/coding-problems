@@ -28,4 +28,5 @@ Example output 3:
 
 ## Solutions
 
+* [JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest/js)
 * [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest/java)

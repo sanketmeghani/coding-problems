@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class ShortestSubSegment {
 
-    public void process() {
+    public static void process() {
         
         try (Scanner in = new Scanner(System.in)) {
 

@@ -5,6 +5,14 @@
 	<artifactId>shortest-sub-segment</artifactId>
 	<version>1.0</version>
 	<name>shortest-sub-segment</name>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>

@@ -26,8 +26,8 @@ npm test
 ## Problems
 
 * [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equililibrium-index): Find equilibrium index of an array
-* [Reverse Polish Notation](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation): Write a programme to evaluate reverse polish notation [[JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/js), [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/java)]
 * [Mirrored Binary Tree](https://github.com/sanketmeghani/coding-problems/tree/master/problems/mirrored-binary-tree): Write a program to check if the given binary tree is mirrored or not
+* [Reverse Polish Notation](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation): Write a programme to evaluate reverse polish notation [[JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/js), [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-polish-notation/java)]
 * [Reverse Words](https://github.com/sanketmeghani/coding-problems/tree/master/problems/reverse-words): Write a programme to reverse words of given string
 * [Rotated Array](https://github.com/sanketmeghani/coding-problems/tree/master/problems/rotated-array): Find a pivot index for sorted & rotated array
 * [Second Smallest](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest): Find second smallest number in give array [[JavaScript](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest/js), [Java](https://github.com/sanketmeghani/coding-problems/tree/master/problems/second-smallest/java)]

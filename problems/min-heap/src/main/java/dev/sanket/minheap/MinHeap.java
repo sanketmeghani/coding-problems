@@ -6,14 +6,44 @@ import java.util.List;
 public class MinHeap {
 
     private List<Integer> nodes = new LinkedList<>();
-    
-    public void addNode() {
+
+    public void addNode(int value) {
+        nodes.add(Integer.valueOf(value));
+        reOrderNodes();
     }
-    
+
+    private void reOrderNodes() {
+
+        int currentIndex = nodes.size() - 1;
+        int parentIndex = getParentIndex(currentIndex);
+
+        while (parentIndex >= 0) {
+
+            if (nodes.get(currentIndex) < nodes.get(parentIndex)) {
+                swapNodes(currentIndex, parentIndex);
+                currentIndex = parentIndex;
+                parentIndex = getParentIndex(currentIndex);
+            } else {
+                break;
+            }
+        }
+    }
+
+    private int getParentIndex(int currentIndex) {
+        return (currentIndex - 1) / 2;
+    }
+
+    private void swapNodes(int currentIndex, int parentIndex) {
+        int parentValue = nodes.remove(parentIndex);
+        nodes.add(parentIndex, nodes.get(currentIndex));
+        nodes.remove(currentIndex);
+        nodes.add(currentIndex, parentValue);
+    }
+
     public Integer peek() {
         return null;
     }
-    
+
     public Integer poll() {
         return null;
     }

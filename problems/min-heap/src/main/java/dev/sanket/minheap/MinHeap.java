@@ -9,10 +9,10 @@ public class MinHeap {
 
     public void addNode(int value) {
         nodes.add(Integer.valueOf(value));
-        reOrderNodes();
+        heapifyUp();
     }
 
-    private void reOrderNodes() {
+    private void heapifyUp() {
 
         int currentIndex = nodes.size() - 1;
         int parentIndex = getParentIndex(currentIndex);
@@ -20,6 +20,7 @@ public class MinHeap {
         while (parentIndex >= 0) {
 
             if (nodes.get(currentIndex) < nodes.get(parentIndex)) {
+                
                 swapNodes(currentIndex, parentIndex);
                 currentIndex = parentIndex;
                 parentIndex = getParentIndex(currentIndex);
@@ -41,7 +42,7 @@ public class MinHeap {
     }
 
     public Integer peek() {
-        return null;
+        return nodes.isEmpty() ? null : nodes.get(0);
     }
 
     public Integer poll() {

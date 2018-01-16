@@ -45,6 +45,56 @@ public class MinHeap {
     }
 
     public Integer poll() {
-        return null;
+
+        if (nodes.isEmpty()) {
+            return null;
+        }
+
+        Integer root = nodes.get(0);
+        nodes.set(0, nodes.get(nodes.size() - 1));
+        nodes.remove(nodes.size() - 1);
+
+        heapifyDown();
+
+        return root;
+    }
+
+    private void heapifyDown() {
+
+        int currentIndex = 0;
+        int childIndex = getChildIndex(currentIndex);
+
+        while (childIndex != -1) {
+
+            if (nodes.get(currentIndex) > nodes.get(childIndex)) {
+
+                swapNodes(currentIndex, childIndex);
+                currentIndex = childIndex;
+                childIndex = getChildIndex(currentIndex);
+
+            } else {
+                break;
+            }
+        }
+    }
+
+    private int getChildIndex(int currentIndex) {
+
+        int leftChildIndex = (2 * currentIndex) + 1;
+        int rightChildIndex = (2 * currentIndex) + 2;
+
+        int minChildIndex = -1;
+
+        if (nodes.size() > leftChildIndex) {
+
+            if (nodes.size() > rightChildIndex) {
+                minChildIndex = nodes.get(leftChildIndex) <= nodes.get(rightChildIndex) ? leftChildIndex
+                        : rightChildIndex;
+            } else {
+                minChildIndex = leftChildIndex;
+            }
+        }
+
+        return minChildIndex;
     }
 }

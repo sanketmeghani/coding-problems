@@ -19,6 +19,7 @@ public class MinHeapTest {
     @Test
     public void shouldReturnNullForEmptyHeap() {
         assertNull(minHeap.peek());
+        assertNull(minHeap.poll());
     }
 
     @Test
@@ -39,5 +40,29 @@ public class MinHeapTest {
         minHeap.addNode(8);
 
         assertEquals("Invalid root value", Integer.valueOf(2), minHeap.peek());
+    }
+    
+    @Test
+    public void shouldReturnMinValuePostRootRemoval() {
+        
+        minHeap.addNode(10);
+        minHeap.addNode(7);
+        minHeap.addNode(9);
+        minHeap.addNode(2);
+        minHeap.addNode(8);
+
+        assertEquals("Invalid root value", Integer.valueOf(2), minHeap.peek());
+        assertEquals("Invalid value removed", Integer.valueOf(2), minHeap.poll());
+        assertEquals("Invalid root value", Integer.valueOf(7), minHeap.peek());
+    }
+    
+    @Test
+    public void shouldReturnNullPostOnlyNodeRemoval() {
+        
+        minHeap.addNode(2);
+        
+        assertEquals("Invalid root value", Integer.valueOf(2), minHeap.peek());
+        assertEquals("Invalid value removed", Integer.valueOf(2), minHeap.poll());
+        assertNull(minHeap.peek());
     }
 }

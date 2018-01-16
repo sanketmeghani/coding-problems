@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>dev.sanket</groupId>
+	<artifactId>coding-problems</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>coding-problems</name>
+	<description>Coding problems and solutions</description>
+	<packaging>pom</packaging>
+	<modules>
+		<module>problems/min-heap</module>
+		<module>problems/equililibrium-index</module>
+		<module>problems/mirrored-binary-tree</module>
+		<module>problems/reverse-polish-notation/java</module>
+		<module>problems/reverse-words</module>
+		<module>problems/rotated-array</module>
+		<module>problems/second-smallest/java</module>
+		<module>problems/shortest-sub-segment</module>
+		<module>problems/skiing</module>
+		<module>problems/subtree-sum</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

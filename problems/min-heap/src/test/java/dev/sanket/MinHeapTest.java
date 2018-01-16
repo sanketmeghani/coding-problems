@@ -26,6 +26,18 @@ public class MinHeapTest {
 
         minHeap.addNode(5);
 
-        assertEquals("Test", Integer.valueOf(5), minHeap.peek());
+        assertEquals("Invalid root value", Integer.valueOf(5), minHeap.peek());
+    }
+
+    @Test
+    public void shouldReturnMinValue() {
+
+        minHeap.addNode(10);
+        minHeap.addNode(7);
+        minHeap.addNode(9);
+        minHeap.addNode(2);
+        minHeap.addNode(8);
+
+        assertEquals("Invalid root value", Integer.valueOf(2), minHeap.peek());
     }
 }

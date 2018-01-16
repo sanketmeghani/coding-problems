@@ -20,7 +20,7 @@ public class MinHeap {
         while (parentIndex >= 0) {
 
             if (nodes.get(currentIndex) < nodes.get(parentIndex)) {
-                
+
                 swapNodes(currentIndex, parentIndex);
                 currentIndex = parentIndex;
                 parentIndex = getParentIndex(currentIndex);
@@ -31,14 +31,13 @@ public class MinHeap {
     }
 
     private int getParentIndex(int currentIndex) {
-        return (currentIndex - 1) / 2;
+        return currentIndex == 0 ? -1 : (currentIndex - 1) / 2;
     }
 
     private void swapNodes(int currentIndex, int parentIndex) {
-        int parentValue = nodes.remove(parentIndex);
-        nodes.add(parentIndex, nodes.get(currentIndex));
-        nodes.remove(currentIndex);
-        nodes.add(currentIndex, parentValue);
+        int parentValue = nodes.get(parentIndex);
+        nodes.set(parentIndex, nodes.get(currentIndex));
+        nodes.set(currentIndex, parentValue);
     }
 
     public Integer peek() {

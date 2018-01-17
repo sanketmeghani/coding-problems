@@ -90,7 +90,7 @@ public class ShortestSubSegment {
                 output.append("NO SUBSEGMENT FOUND");
             }
 
-            System.out.println(output);
+            System.out.print(output);
         }
     }
 }

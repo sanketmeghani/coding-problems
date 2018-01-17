@@ -21,9 +21,7 @@ public class SortestSubSegmentTest {
         ShortestSubSegment.process();
 
         String output = baos.toString();
-        //Trim CR-LF
-        String trimmedOutput = output.substring(0, output.length() - 2);
         
-        Assert.assertEquals("Shortest sub segment is incorrect", "a programming test This", trimmedOutput);
+        Assert.assertEquals("Shortest sub segment is incorrect", "a programming test This", output);
     }
 }

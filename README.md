@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sanketmeghani/coding-problems.svg?branch=master)](https://travis-ci.org/sanketmeghani/coding-problems)
+
 # Coding Problems
 
 Common coding problems with their solutions

@@ -27,6 +27,7 @@ npm test
 
 ## Problems
 
+* [Connected Cells](https://github.com/sanketmeghani/coding-problems/tree/master/problems/connected-cells): Find connected cells in a matrix
 * [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equililibrium-index): Find equilibrium index of an array
 * [Min Heap](https://github.com/sanketmeghani/coding-problems/tree/master/problems/min-heap): Implement a min heap
 * [Mirrored Binary Tree](https://github.com/sanketmeghani/coding-problems/tree/master/problems/mirrored-binary-tree): Write a program to check if the given binary tree is mirrored or not

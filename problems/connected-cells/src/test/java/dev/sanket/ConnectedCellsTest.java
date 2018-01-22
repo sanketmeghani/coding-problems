@@ -1,14 +1,32 @@
 package dev.sanket;
 
-import java.util.Scanner;
-
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Scanner;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
 public class ConnectedCellsTest {
 
     private int[][] matrix;
+
+    @Parameter(value = 0)
+    public String inputFileName;
+
+    @Parameter(value = 1)
+    public int largestRegionSize;
+
+    @Parameters
+    public static Collection<Object[]> testData() {
+        return Arrays.asList(new Object[][] { { "/input1.txt", 5 }, { "/input2.txt", 14 } });
+    }
 
     private void loadMatrix(String fileName) {
 
@@ -29,10 +47,10 @@ public class ConnectedCellsTest {
 
     @Test
     public void shouldReturnLargestRegion() {
-        loadMatrix("/input1.txt");
+        loadMatrix(inputFileName);
 
         int output = ConnectedCells.connectedCell(matrix);
 
-        assertEquals("Invalid largest region size", 5, output);
+        assertEquals("Invalid largest region size", largestRegionSize, output);
     }
 }

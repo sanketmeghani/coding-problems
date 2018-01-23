@@ -25,7 +25,8 @@ public class ConnectedCellsTest {
 
     @Parameters
     public static Collection<Object[]> testData() {
-        return Arrays.asList(new Object[][] { { "/input1.txt", 5 }, { "/input2.txt", 14 } });
+        return Arrays.asList(new Object[][] { { "/input1.txt", 5 }, { "/input2.txt", 14 }, { "/input3.txt", 16 },
+                { "/input4.txt", 12 } });
     }
 
     private void loadMatrix(String fileName) {

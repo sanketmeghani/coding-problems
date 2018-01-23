@@ -1,34 +1,44 @@
 package dev.sanket;
 
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 public class ConnectedCells {
 
     public static int connectedCell(int[][] matrix) {
 
-        for (int i = matrix.length - 1; i >= 0; i--) {
-            for (int j = matrix[i].length - 1; j >= 0; j--) {
-                if (matrix[i][j] == 1) {
-                    matrix[i][j] += rightAdjascentRegions(matrix, i, j) + bottomAdjascentRegions(matrix, i, j)
-                            - removeDuplicateAdditions(matrix, i, j);
+        int maxRegionSize = 0;
+
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[row].length; column++) {
+
+                if (matrix[row][column] == 1) {
+                    int regionSize = getRegionSize(matrix, row, column);
+                    maxRegionSize = Math.max(maxRegionSize, regionSize);
                 }
             }
         }
 
-        return Stream.of(matrix).flatMapToInt(IntStream::of).max().getAsInt();
+        return maxRegionSize;
     }
 
-    private static int removeDuplicateAdditions(int[][] matrix, int i, int j) {
-        return ((i < matrix.length - 1) && (j < matrix[i].length - 1) && (matrix[i + 1][j] != 0)
-                && (matrix[i][j + 1] != 0)) ? matrix[i + 1][j + 1] : 0;
-    }
+    private static int getRegionSize(int[][] matrix, int row, int column) {
 
-    private static int rightAdjascentRegions(int[][] matrix, int i, int j) {
-        return (j < matrix[i].length - 1) ? matrix[i][j + 1] : 0;
-    }
+        if (row < 0 || row >= matrix.length || column < 0 || column >= matrix[row].length) {
+            return 0;
+        }
 
-    private static int bottomAdjascentRegions(int[][] matrix, int i, int j) {
-        return (i < matrix.length - 1) ? matrix[i + 1][j] : 0;
+        int regionSize = 0;
+
+        if (matrix[row][column] == 1) {
+
+            regionSize = 1;
+            matrix[row][column] = 0;
+
+            for (int i = row - 1; i <= row + 1; i++) {
+                for (int j = column - 1; j <= column + 1; j++) {
+                    regionSize += getRegionSize(matrix, i, j);
+                }
+            }
+        }
+
+        return regionSize;
     }
 }

@@ -8,8 +8,9 @@
 	<description>Coding problems and solutions</description>
 	<packaging>pom</packaging>
 	<modules>
-		<module>problems/min-heap</module>
+		<module>problems/connected-cells</module>
 		<module>problems/equililibrium-index</module>
+		<module>problems/min-heap</module>
 		<module>problems/mirrored-binary-tree</module>
 		<module>problems/reverse-polish-notation/java</module>
 		<module>problems/reverse-words</module>

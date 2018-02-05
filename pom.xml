@@ -11,6 +11,7 @@
 		<module>problems/connected-cells</module>
 		<module>problems/equililibrium-index</module>
 		<module>problems/min-heap</module>
+		<module>problems/minimum-loss</module>
 		<module>problems/mirrored-binary-tree</module>
 		<module>problems/reverse-polish-notation/java</module>
 		<module>problems/reverse-words</module>

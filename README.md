@@ -29,6 +29,7 @@ npm test
 
 * [Connected Cells](https://github.com/sanketmeghani/coding-problems/tree/master/problems/connected-cells): Find connected cells in a matrix
 * [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equililibrium-index): Find equilibrium index of an array
+* [Gridland Metro](https://github.com/sanketmeghani/coding-problems/tree/master/problems/gridland-metro): Find and print the number of cells where the mayor can place lampposts
 * [Min Heap](https://github.com/sanketmeghani/coding-problems/tree/master/problems/min-heap): Implement a min heap
 * [Minimum Loss](https://github.com/sanketmeghani/coding-problems/tree/master/problems/minimum-loss): Find minimum loss
 * [Mirrored Binary Tree](https://github.com/sanketmeghani/coding-problems/tree/master/problems/mirrored-binary-tree): Write a program to check if the given binary tree is mirrored or not

@@ -10,6 +10,7 @@
 	<modules>
 		<module>problems/connected-cells</module>
 		<module>problems/equililibrium-index</module>
+		<module>problems/gridland-metro</module>
 		<module>problems/min-heap</module>
 		<module>problems/minimum-loss</module>
 		<module>problems/mirrored-binary-tree</module>
@@ -19,7 +20,7 @@
 		<module>problems/second-smallest/java</module>
 		<module>problems/shortest-sub-segment</module>
 		<module>problems/skiing</module>
-		<module>problems/subtree-sum</module>
+		<module>problems/subtree-sum</module>		
 	</modules>
 	<build>
 		<plugins>

@@ -15,6 +15,7 @@
 		<module>problems/min-heap</module>
 		<module>problems/minimum-loss</module>
 		<module>problems/mirrored-binary-tree</module>
+		<module>problems/pairs</module>
 		<module>problems/reverse-polish-notation/java</module>
 		<module>problems/reverse-words</module>
 		<module>problems/rotated-array</module>

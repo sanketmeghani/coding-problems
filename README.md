@@ -28,6 +28,7 @@ npm test
 ## Problems
 
 * [Connected Cells](https://github.com/sanketmeghani/coding-problems/tree/master/problems/connected-cells): Find connected cells in a matrix
+* [Counting Game](https://github.com/sanketmeghani/coding-problems/tree/master/problems/counting-game): Find winner in a counting game
 * [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equililibrium-index): Find equilibrium index of an array
 * [Fraudulent Activity](https://github.com/sanketmeghani/coding-problems/tree/master/problems/fraudulent-activity): Find and print the number of times the client will receive a fraudulent notification
 * [Gridland Metro](https://github.com/sanketmeghani/coding-problems/tree/master/problems/gridland-metro): Find and print the number of cells where the mayor can place lampposts

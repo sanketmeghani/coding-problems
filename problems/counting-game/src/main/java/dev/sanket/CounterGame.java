@@ -28,15 +28,7 @@ public class CounterGame {
         long maxPowerOfTwo = 1;
 
         do {
-
-            boolean isPowerOfTwo = isPowerOfTwo(value);
-
-            if (isPowerOfTwo && value > maxPowerOfTwo) {
-                maxPowerOfTwo = value;
-            }
-
             value = value << 1;
-
         } while (value < n);
 
         return maxPowerOfTwo;

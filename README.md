@@ -32,6 +32,7 @@ npm test
 * [Equilibrium Index](https://github.com/sanketmeghani/coding-problems/tree/master/problems/equililibrium-index): Find equilibrium index of an array
 * [Fraudulent Activity](https://github.com/sanketmeghani/coding-problems/tree/master/problems/fraudulent-activity): Find and print the number of times the client will receive a fraudulent notification
 * [Gridland Metro](https://github.com/sanketmeghani/coding-problems/tree/master/problems/gridland-metro): Find and print the number of cells where the mayor can place lampposts
+* [Largest Rectangle](https://github.com/sanketmeghani/coding-problems/tree/master/problems/largest-rectangle): Find largest rectangle in given histogram
 * [Max No](https://github.com/sanketmeghani/coding-problems/tree/master/problems/max-no): Form maximum number with give numbers
 * [Min Heap](https://github.com/sanketmeghani/coding-problems/tree/master/problems/min-heap): Implement a min heap
 * [Minimum Loss](https://github.com/sanketmeghani/coding-problems/tree/master/problems/minimum-loss): Find minimum loss

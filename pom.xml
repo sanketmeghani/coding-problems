@@ -13,6 +13,7 @@
         <module>problems/equililibrium-index</module>
         <module>problems/fraudulent-activity</module>
         <module>problems/gridland-metro</module>
+        <module>problems/largest-rectangle</module>
         <module>problems/max-no</module>
         <module>problems/min-heap</module>
         <module>problems/minimum-loss</module>
